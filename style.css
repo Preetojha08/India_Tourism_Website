@@ -1,0 +1,136 @@
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1)),url(taj.jpg);
+    background-size: cover;
+}
+
+nav{
+
+    width: 100%;
+    height: 14vh;
+    background-color: rgb(0, 0, 0,0.2 ) ; 
+    color: white; 
+    display: flex; 
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'STIX Two Text', serif;
+}
+
+.logo{
+    width: 30%;
+    text-align: center;
+    align-items: center ;
+}
+
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: white;
+    font-style: unset;
+}
+
+.nav_menu_1{
+    width: 20%;
+    text-align: center;
+}
+
+nav .menu a{
+    width: 20%;
+    text-decoration: none ;
+}
+
+.conatiner{
+    width: 100% ;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+}
+
+h2{
+    font-size: 30pt;
+    background: -webkit-linear-gradient(#FF9933,#FFFFFF, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3{
+    
+    font-size: 35pt;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 0px 20px 0px;
+    text-shadow: 2px 1px 5px black;
+    
+}
+
+section h4{
+    font-size: 28px;
+    color: #eee;
+    word-spacing: 2px;
+    font-family: 'STIX Two Text', serif;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.btn_1{
+    background-color: #30bdb1;
+    text-shadow: none;
+}
+
+.btn_2{
+    background-color: #ffffff;
+    color: #30bdb1;
+    text-shadow: none;
+}
+
+.change_contain::after{
+    content: '';
+    animation: cha 2s infinite linear;
+    /*animation: changetext 2s infinite linear;*/ 
+    color: #30bdb1;
+}
+
+@keyframes cha{
+    0%{content:"Hello World";}
+    20%{content:"BYE World";}
+    
+    /* 60%{content: "Madhya Pradesh";}
+    70%{content: "Goa";} */  
+}
+
