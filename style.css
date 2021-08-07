@@ -119,10 +119,16 @@ section a{
     text-shadow: none;
 }
 
-.change_contain::after{
+nav a:hover
+{
+    background: -webkit-linear-gradient(#FF9933,#FFFFFF, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .change_contain::after{
     content: '';
     animation: cha 2s infinite linear;
-    /*animation: changetext 2s infinite linear;*/ 
     color: #30bdb1;
 }
 
@@ -131,6 +137,34 @@ section a{
     20%{content:"BYE World";}
     
     /* 60%{content: "Madhya Pradesh";}
-    70%{content: "Goa";} */  
-}
+    70%{content: "Goa";}   } */
 
+span#hometown::before { 
+        content: normal;
+      }
+.change_contain::after {
+    content: "";
+    animation: changetext 20s infinite linear;
+    animation-delay: 1.5s;
+    color: #00b894;
+  }
+
+ 
+@keyframes changetext {
+
+    0% { content:'Uttar Pradesh'; }
+    10% { content:'Punjab'; }
+    20% { content:'Gujarat'; }
+    30% { content:'Rajasthan'; }
+    40% { content:'Delhi'; }
+    50% { content:'Bihar'; }
+    60% { content:'Andhra Pradesh'; }
+    70% { content:'Jammu and Kashmir'; }
+    80% { content:'Kerala'; }
+    90% { content:'Ladakh'; }
+    100% { content:'Maharashtr'; }
+    
+
+  }
+
+  
