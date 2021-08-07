@@ -126,22 +126,11 @@ nav a:hover
     -webkit-text-fill-color: transparent;
 }
 
-/* .change_contain::after{
-    content: '';
-    animation: cha 2s infinite linear;
-    color: #30bdb1;
+section a:hover{
+    background-color: rgba(0,0,0,0.5);
 }
 
-@keyframes cha{
-    0%{content:"Hello World";}
-    20%{content:"BYE World";}
-    
-    /* 60%{content: "Madhya Pradesh";}
-    70%{content: "Goa";}   } */
 
-span#hometown::before { 
-        content: normal;
-      }
 .change_contain::after {
     content: "";
     animation: changetext 20s infinite linear;
